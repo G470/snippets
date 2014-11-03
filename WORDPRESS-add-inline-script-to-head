@@ -1,0 +1,12 @@
+/**
+ * Enqueu inline script for responsive configuration
+ */
+function adapt_config_js() {
+    echo "<script type='text/javascript'>
+
+//script here...
+
+    </script>";
+}
+// Add hook for front-end <head></head>
+add_action('wp_head', 'adapt_config_js');
